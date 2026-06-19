@@ -1,0 +1,14 @@
+# MotoVest robots.txt
+# Allow search engines to crawl all public content
+
+User-agent: *
+Allow: /
+
+# Disallow any future admin or private paths
+Disallow: /admin/
+Disallow: /private/
+Disallow: /dashboard/
+Disallow: /api/
+
+# Point to sitemap
+Sitemap: https://drivewithmotovest.com/sitemap.xml

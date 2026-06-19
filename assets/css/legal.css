@@ -1,0 +1,74 @@
+/* 
+   LEGAL PAGES
+ */
+
+.legal-hero{
+  min-height:55vh;
+  display:flex;
+  align-items:center;
+  padding-top:140px;
+  text-align:center;
+  background:
+    radial-gradient(circle at top, rgba(250,204,21,.12), transparent 35%),
+    #050505;
+}
+
+.legal-hero .container{
+  max-width:850px;
+}
+
+.legal-hero h1{
+  margin-bottom:20px;
+}
+
+.legal-hero p{
+  max-width:700px;
+  margin:0 auto;
+}
+
+.legal-content{
+  background:#0b0b0b;
+  padding-top:80px;
+}
+
+.legal-container{
+  max-width:950px;
+  margin:0 auto;
+}
+
+.legal-card{
+  background:var(--bg-card);
+  border:1px solid var(--border-color);
+  border-radius:22px;
+  padding:32px;
+  margin-bottom:22px;
+}
+
+.legal-card h2{
+  font-size:1.35rem;
+  margin-bottom:14px;
+  color:#fff;
+}
+
+.legal-card p{
+  color:var(--text-secondary);
+  line-height:1.8;
+  margin-bottom:10px;
+}
+
+.legal-card:hover{
+  border-color:rgba(250,204,21,.35);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+  .legal-hero{
+    min-height:auto;
+    padding-top:120px;
+  }
+
+  .legal-card{
+    padding:24px;
+  }
+}

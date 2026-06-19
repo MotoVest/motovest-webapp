@@ -1,0 +1,205 @@
+@media(max-width:1024px){
+  section{
+    padding:80px 6%;
+  }
+
+  .hero,
+  .about-hero,
+  .drivers-hero,
+  .vehicles-hero,
+  .contact-hero,
+  .driver-dashboard{
+    grid-template-columns:1fr;
+  }
+
+  .benefits-grid,
+  .vehicle-grid,
+  .documents-grid,
+  .impact-grid,
+  .office-grid,
+  .stats-grid,
+  .journey-grid,
+  .steps{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .step-card:not(:last-child)::after{
+    display:none;
+  }
+
+  .testimonial-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .partners-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .dashboard-image img{
+    max-width:420px;
+  }
+}
+
+@media(max-width:768px){
+  section{
+    padding:70px 6%;
+  }
+
+  .navbar{
+    height:72px;
+  }
+
+  .nav-links,
+  .nav-actions{
+    display:none;
+  }
+
+  .menu-toggle{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .nav-links.active{
+    display:flex;
+    position:absolute;
+    top:72px;
+    left:0;
+    width:100%;
+    flex-direction:column;
+    gap:0;
+    background:#000;
+    padding:20px 6%;
+    border-top:1px solid var(--border-color);
+  }
+
+  .nav-links.active li{
+    padding:14px 0;
+  }
+
+  h1{
+    font-size:2.8rem;
+  }
+
+  h2{
+    font-size:2rem;
+  }
+
+  .hero,
+  .about-hero,
+  .drivers-hero,
+  .vehicles-hero,
+  .contact-hero{
+    min-height:auto;
+    padding-top:120px;
+  }
+
+  .hero-buttons,
+  .card-actions,
+  .newsletter-form{
+    flex-direction:column;
+  }
+
+  .benefits-grid,
+  .vehicle-grid,
+  .documents-grid,
+  .impact-grid,
+  .office-grid,
+  .form-grid,
+  .footer-grid,
+  .stats-grid,
+  .journey-grid,
+  .testimonial-grid,
+  .partners-grid,
+  .steps{
+    grid-template-columns:1fr;
+  }
+
+  .step-card{
+    padding-bottom:34px;
+  }
+
+  .step-card:not(:last-child)::after{
+    content:"↓";
+    display:block;
+    position:absolute;
+    right:auto;
+    left:50%;
+    top:auto;
+    bottom:-18px;
+    transform:translateX(-50%);
+    color:#999;
+    font-size:24px;
+    font-weight:700;
+  }
+
+  .driver-form,
+  .contact-form{
+    padding:24px;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+  .platform-logos{
+    gap:14px;
+  }
+
+  .platform-logos img{
+    height:24px;
+  }
+
+  .dashboard-image img{
+    max-width:100%;
+  }
+
+  .whatsapp-float{
+    left:6%;
+    right:6%;
+    justify-content:center;
+  }
+}
+
+@media(max-width:480px){
+  h1{
+    font-size:2.35rem;
+  }
+
+  .logo{
+    font-size:1.5rem;
+  }
+
+  .stat-card,
+  .journey-card,
+  .testimonial-card,
+  .partner-card,
+  .benefit-card{
+    padding:24px;
+  }
+
+  .vehicle-card img{
+    height:210px;
+  }
+
+  .step-card .icon{
+    width:68px;
+    height:68px;
+  }
+
+  .step-card .icon i{
+    width:28px;
+    height:28px;
+  }
+}
+
+@media(max-width:768px){
+  .application-cta-card{
+    flex-direction:column;
+    text-align:center;
+  }
+}

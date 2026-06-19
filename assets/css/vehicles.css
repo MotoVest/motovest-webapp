@@ -1,0 +1,281 @@
+/* ========================================
+   DRIVERS PAGE
+======================================== */
+
+.drivers-hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:60px;
+  padding-top:140px;
+  background:
+    radial-gradient(circle at top right, rgba(250,204,21,.12), transparent 35%),
+    #0b0b0b;
+}
+
+.drivers-hero h1{
+  margin-bottom:24px;
+}
+
+.drivers-hero p{
+  max-width:620px;
+  margin-bottom:32px;
+}
+
+.drivers-hero-image img{
+  border-radius:28px;
+  box-shadow:var(--shadow-xl);
+  object-fit:cover;
+}
+
+/* BENEFITS */
+
+.driver-benefits{
+  background:#050505;
+}
+
+.driver-benefits .benefits-grid{
+  grid-template-columns:repeat(4,1fr);
+}
+
+.driver-benefits .benefit-card{
+  text-align:center;
+}
+
+.driver-benefits .benefit-card svg{
+  width:36px;
+  height:36px;
+  color:var(--primary);
+  margin-bottom:18px;
+}
+
+/* REQUIREMENTS */
+
+.requirements{
+  background:#0b0b0b;
+}
+
+.requirements-content{
+  max-width:900px;
+  margin:0 auto;
+  background:linear-gradient(180deg,#151515,#101010);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:28px;
+  padding:46px;
+  box-shadow:0 20px 50px rgba(0,0,0,.25);
+}
+
+.requirements-content h2{
+  text-align:center;
+  margin-bottom:34px;
+}
+
+.requirements-content li{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding:16px 0;
+  color:#d1d5db;
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.requirements-content li:last-child{
+  border-bottom:none;
+}
+
+.requirements-content svg{
+  width:22px;
+  height:22px;
+  color:var(--primary);
+  min-width:22px;
+}
+
+/* DOCUMENTS */
+
+.documents{
+  background:#050505;
+  text-align:center;
+}
+
+.documents h2{
+  margin-bottom:50px;
+}
+
+.documents-grid{
+  max-width:1100px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+}
+
+.document-card{
+  background:var(--bg-card);
+  border:1px solid var(--border-color);
+  border-radius:24px;
+  padding:34px 24px;
+  transition:.3s ease;
+}
+
+.document-card:hover{
+  transform:translateY(-6px);
+  border-color:var(--primary);
+}
+
+.document-card svg{
+  width:34px;
+  height:34px;
+  color:var(--primary);
+  margin-bottom:18px;
+}
+
+/* APPLICATION FORM */
+
+.application-form-section{
+  background:#0b0b0b;
+}
+
+.application-form-section h2{
+  text-align:center;
+  margin-bottom:36px;
+}
+
+.application-form-section .btn{
+  margin-top:10px;
+}
+
+/* APPLICATION PROCESS */
+
+.application-process{
+  background:#050505;
+  text-align:center;
+}
+
+.application-process h2{
+  margin-bottom:50px;
+}
+
+.application-process .steps{
+  max-width:1200px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+}
+
+.application-process .step-card{
+  background:var(--bg-card);
+  border:1px solid var(--border-color);
+  border-radius:24px;
+  padding:34px 24px;
+  text-align:center;
+  transition:.3s ease;
+}
+
+.application-process .step-card:hover{
+  transform:translateY(-5px);
+  border-color:var(--primary);
+}
+
+.application-process .step-card h3{
+  color:var(--primary);
+  margin-bottom:12px;
+}
+
+.application-process .step-card p{
+  color:var(--text-secondary);
+}
+
+/* DRIVER FAQ */
+
+.faq{
+  background:#0b0b0b;
+  text-align:center;
+}
+
+.faq h2{
+  margin-bottom:50px;
+}
+
+.faq .faq-item{
+  max-width:900px;
+  margin:0 auto 20px;
+  background:var(--bg-card);
+  border:1px solid var(--border-color);
+  border-radius:20px;
+  padding:28px;
+  text-align:left;
+}
+
+.faq .faq-item h3{
+  color:#fff;
+  margin-bottom:12px;
+}
+
+.faq .faq-item p{
+  color:var(--text-secondary);
+}
+
+/* CTA */
+
+.apply-section{
+  text-align:center;
+  background:var(--primary);
+  color:#000;
+}
+
+.apply-section h2{
+  max-width:760px;
+  margin:0 auto 16px;
+}
+
+.apply-section p{
+  color:#111;
+  margin:0 auto 30px;
+  max-width:620px;
+}
+
+.apply-section .btn-primary{
+  background:#000;
+  color:#fff;
+}
+
+.apply-section .btn-primary:hover{
+  background:#111;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1024px){
+  .drivers-hero{
+    grid-template-columns:1fr;
+  }
+
+  .driver-benefits .benefits-grid,
+  .documents-grid,
+  .application-process .steps{
+    grid-template-columns:repeat(2,1fr);
+  }
+}
+
+@media(max-width:768px){
+  .drivers-hero{
+    min-height:auto;
+    padding-top:120px;
+  }
+
+  .driver-benefits .benefits-grid,
+  .documents-grid,
+  .application-process .steps{
+    grid-template-columns:1fr;
+  }
+
+  .requirements-content{
+    padding:26px;
+  }
+
+  .faq .faq-item{
+    padding:24px;
+  }
+}

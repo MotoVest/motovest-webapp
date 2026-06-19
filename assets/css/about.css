@@ -1,0 +1,174 @@
+.about-hero{
+  min-height:100vh;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  align-items:center;
+  gap:60px;
+  padding-top:140px;
+}
+
+.about-hero h1{
+  margin-bottom:24px;
+}
+
+.about-hero p{
+  max-width:620px;
+}
+
+.about-hero-image img,
+.story-image img,
+.team-card img{
+  border-radius:24px;
+  box-shadow:var(--shadow-xl);
+}
+
+.our-story{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:60px;
+  align-items:center;
+  background:#050505;
+}
+
+.story-content h2{
+  margin-bottom:24px;
+}
+
+.story-content p{
+  margin-bottom:18px;
+}
+
+.mission-vision{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.mission-card{
+  background:var(--bg-card);
+  border:1px solid var(--border-color);
+  border-radius:24px;
+  padding:36px;
+}
+
+.mission-card i{
+  color:var(--primary);
+  margin-bottom:20px;
+}
+
+.impact-section{
+  background:#050505;
+  text-align:center;
+}
+
+.impact-section h2,
+.why-motovest h2,
+.leadership h2,
+.partners h2{
+  margin-bottom:50px;
+  text-align:center;
+}
+
+.impact-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+}
+
+.impact-card{
+  background:var(--bg-card);
+  border:1px solid var(--border-color);
+  border-radius:24px;
+  padding:32px;
+}
+
+.impact-card h3{
+  color:var(--primary);
+  font-size:2rem;
+  margin-bottom:8px;
+}
+
+.why-motovest{
+  background:#0b0b0b;
+}
+
+.leadership{
+  background:#050505;
+}
+
+.team-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:24px;
+  max-width:760px;
+  margin:auto;
+}
+
+.team-card{
+  background:var(--bg-card);
+  border:1px solid var(--border-color);
+  border-radius:24px;
+  padding:28px;
+  text-align:center;
+}
+
+.team-card img{
+  height:280px;
+  object-fit:cover;
+  margin-bottom:20px;
+}
+
+.partners{
+  background:#0b0b0b;
+}
+
+.partner-logo{
+  background:var(--bg-card);
+  border:1px solid var(--border-color);
+  border-radius:18px;
+  padding:24px;
+  text-align:center;
+  font-weight:800;
+  color:#fff;
+}
+
+.about-cta{
+  text-align:center;
+  background:var(--primary);
+  color:#000;
+}
+
+.about-cta p{
+  color:#111;
+  margin:15px 0 30px;
+}
+
+.about-cta .btn-primary{
+  background:#000;
+  color:#fff;
+}
+
+.partners{
+  text-align:center;
+}
+
+.partners .partners-grid{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items:center;
+  gap:48px;
+  margin-top:40px;
+}
+
+.partner-logo img{
+  height:30px;
+  width:auto;
+  display:block;
+  opacity:.85;
+  transition:opacity .25s ease;
+}
+
+.partner-logo:hover img{
+  opacity:1;
+}

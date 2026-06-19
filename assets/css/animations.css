@@ -1,0 +1,184 @@
+/* 
+   MOTOVEST ANIMATIONS
+   animations.css
+ */
+
+/* Smooth hover lift */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fade in from bottom */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade in from left */
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade in from right */
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Soft floating image */
+@keyframes floatSoft {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Soft pulse for CTA */
+@keyframes pulseSoft {
+  0% {
+    box-shadow: 0 0 0 0 rgba(250, 204, 21, 0.4);
+  }
+
+  70% {
+    box-shadow: 0 0 0 14px rgba(250, 204, 21, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(250, 204, 21, 0);
+  }
+}
+
+/* Animation utility classes */
+.animate-fade-in {
+  animation: fadeIn 0.7s ease forwards;
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.animate-fade-left {
+  animation: fadeLeft 0.8s ease forwards;
+}
+
+.animate-fade-right {
+  animation: fadeRight 0.8s ease forwards;
+}
+
+.animate-float {
+  animation: floatSoft 4s ease-in-out infinite;
+}
+
+.animate-pulse {
+  animation: pulseSoft 2.5s infinite;
+}
+
+/* Delay utilities */
+.delay-1 {
+  animation-delay: 0.1s;
+}
+
+.delay-2 {
+  animation-delay: 0.2s;
+}
+
+.delay-3 {
+  animation-delay: 0.3s;
+}
+
+.delay-4 {
+  animation-delay: 0.4s;
+}
+
+/* Apply subtle animation to common elements */
+.hero-content,
+.about-hero-content,
+.drivers-hero-content,
+.vehicles-hero-content,
+.contact-hero-content {
+  animation: fadeLeft 0.8s ease forwards;
+}
+
+.hero-image,
+.about-hero-image,
+.drivers-hero-image,
+.vehicles-hero-image {
+  animation: fadeRight 0.8s ease forwards;
+}
+
+.step-card,
+.benefit-card,
+.vehicle-card,
+.document-card,
+.impact-card,
+.office-card,
+.team-card,
+.partner-logo {
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-card:hover,
+.benefit-card:hover,
+.vehicle-card:hover,
+.document-card:hover,
+.impact-card:hover,
+.office-card:hover,
+.team-card:hover,
+.partner-logo:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

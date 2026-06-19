@@ -1,0 +1,27 @@
+.site-header{position:fixed;top:0;left:0;width:100%;z-index:1000;background:rgba(0,0,0,.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,.05)}
+.site-header.scrolled{background:rgba(0,0,0,.98);box-shadow:0 4px 20px rgba(0,0,0,.25)}
+
+.navbar{height:80px;display:flex;align-items:center;justify-content:space-between;padding:0 8%}
+.logo{font-size:1.8rem;font-weight:800}
+.logo span{color:var(--primary)}
+.nav-links{display:flex;gap:30px}
+.nav-links a{color:#d1d5db;transition:.3s}
+.nav-links a:hover,.nav-links a.active{color:var(--primary)}
+.nav-actions{display:flex;align-items:center;gap:18px}
+.phone-link{display:flex;align-items:center;gap:8px;color:#d1d5db}
+.menu-toggle{display:none;background:none;border:none;color:#fff;cursor:pointer}
+
+.section-header{margin-bottom:60px}
+.section-header.center{text-align:center}
+.section-header h2{margin-bottom:15px}
+
+.hero,.about-hero,.drivers-hero,.vehicles-hero,.contact-hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;padding-top:140px}
+.hero-content h1 span{color:var(--primary)}
+.hero-content h1,.about-hero h1,.drivers-hero h1,.vehicles-hero h1,.contact-hero h1{margin-bottom:24px}
+.hero-content p,.about-hero p,.drivers-hero p,.vehicles-hero p,.contact-hero p{max-width:600px;margin-bottom:32px}
+.hero-image img,.about-hero-image img,.drivers-hero-image img,.vehicles-hero-image img{border-radius:24px;box-shadow:var(--shadow-xl)}
+
+.benefits-grid,.vehicle-grid,.documents-grid,.impact-grid,.office-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:25px}
+.benefit-card,.vehicle-card,.document-card,.impact-card,.office-card{background:var(--bg-card);border:1px solid var(--border-color);border-radius:24px;padding:30px;transition:.3s}
+.benefit-card:hover,.vehicle-card:hover,.document-card:hover{transform:translateY(-6px);border-color:var(--primary)}
+.benefit-card i,.document-card i,.office-card i{color:var(--primary);margin-bottom:20px}

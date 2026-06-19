@@ -1,0 +1,255 @@
+.careers-hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding-top:140px;
+}
+
+.careers-content{
+    max-width:800px;
+    margin:auto;
+}
+
+.careers-content h1{
+    margin:25px 0;
+}
+
+.careers-content p{
+    max-width:650px;
+    margin:0 auto 35px;
+}
+
+.why-join{
+    background:#050505;
+}
+
+.open-roles{
+    background:#0b0b0b;
+}
+
+.roles-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.role-card{
+    background:var(--bg-card);
+    border:1px solid var(--border-color);
+    border-radius:24px;
+    padding:35px;
+}
+
+.role-card h3{
+    margin-bottom:15px;
+}
+
+.role-card p{
+    margin-bottom:25px;
+}
+
+.career-cta{
+    background:var(--primary);
+    color:#000;
+    text-align:center;
+}
+
+.career-cta p{
+    color:#111;
+    margin:15px 0 30px;
+}
+
+.career-cta .btn-primary{
+    background:#000;
+    color:#fff;
+}
+
+/* --- APPLICATION MODAL SCREEN STYLES --- */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.modal.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8); /* Deep dark backdrop overlay */
+    backdrop-filter: blur(6px);
+}
+
+.modal-content {
+    position: relative;
+    background: #121212; /* Matches your dark style theme */
+    border: 1px solid var(--border-color);
+    width: 90%;
+    max-width: 550px;
+    max-height: 90vh;
+    overflow-y: auto;
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    transform: translateY(30px);
+    transition: transform 0.3s ease;
+}
+
+.modal.is-open .modal-content {
+    transform: translateY(0);
+}
+
+.modal-close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.modal-close-btn:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+.modal-header h2 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+#modal-role-subtitle {
+    color: #888;
+    font-size: 1rem;
+}
+
+#dynamic-role-title {
+    color: var(--primary); /* Uses your main corporate accent highlight */
+    font-weight: 600;
+}
+
+.modal-form {
+    margin-top: 25px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 16px;
+    background: #1a1a1a;
+    border: 1px solid var(--border-color);
+    color: #fff;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: inherit;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.18); /* brand-yellow focus ring */
+}
+
+/* File upload input */
+.form-group input[type="file"] {
+    padding: 10px 12px;
+    cursor: pointer;
+    color: #ccc;
+}
+
+.form-group input[type="file"]::file-selector-button {
+    margin-right: 14px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background: var(--primary);
+    color: #000;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+
+.form-group input[type="file"]::file-selector-button:hover {
+    opacity: 0.85;
+}
+
+.w-full {
+    width: 100%;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Inline form message (success / error) inside the modal.
+   Dark-tinted to suit the modal's dark theme. */
+.form-message {
+    display: none;
+    margin-top: 16px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+}
+
+.form-message.success {
+    background: #10241c;
+    color: #6ee7b7;
+    border: 1px solid #134e3a;
+}
+
+.form-message.error {
+    background: #2a1414;
+    color: #fca5a5;
+    border: 1px solid #5b1f1f;
+}
+
+/* --- RESPONSIVE STYLES --- */
+@media(max-width:768px){
+
+    .roles-grid{
+        grid-template-columns:1fr;
+    }
+
+    .modal-content {
+        padding: 25px;
+        width: 95%;
+    }
+}
