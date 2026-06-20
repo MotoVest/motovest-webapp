@@ -6,25 +6,30 @@
 
   <title>Contact | MotoVest</title>
   <meta name="description" content="Get in touch with MotoVest — driver applications, vehicle ownership plans, partnerships, investor enquiries, and support. Call, email, or message us on WhatsApp." />
-  <meta name="theme-color" content="#0B2447" />
+  <meta name="theme-color" content="#00B26B" />
+
+  <!-- SEO Improvements -->
+  <link rel="canonical" href="https://drivewithmotovest.com/contact.html" />
+  <meta name="robots" content="index, follow">
 
   <link rel="icon" href="./assets/images/logos/favicon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logos/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logos/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logos/apple-touch-icon.png" />
 
+  <!-- Open Graph and Twitter tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://motovest.ng/contact.html" />
+  <meta property="og:url" content="https://drivewithmotovest.com/contact.html" />
   <meta property="og:title" content="Contact | MotoVest" />
-  <meta property="og:description" content="Reach the MotoVest team for driver applications, ownership plans, partnerships, and support." />
-  <meta property="og:image" content="https://motovest.ng/assets/images/logos/og-banner.png" />
+  <meta property="og:description" content="Reach the MotoVest team for driver applications, vehicle ownership plans, partnerships, and support." />
+  <meta property="og:image" content="https://drivewithmotovest.com/assets/images/logos/og-banner.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Contact | MotoVest" />
-  <meta name="twitter:description" content="Reach the MotoVest team for driver applications, ownership plans, partnerships, and support." />
-  <meta name="twitter:image" content="https://motovest.ng/assets/images/logos/og-banner.png" />
+  <meta name="twitter:description" content="Reach the MotoVest team for driver applications, vehicle ownership plans, partnerships, and support." />
+  <meta name="twitter:image" content="https://drivewithmotovest.com/assets/images/logos/og-banner.png" />
 
   <link rel="stylesheet" href="./assets/css/variables.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -34,6 +39,18 @@
   <link rel="stylesheet" href="./assets/css/footer.css" />
   <link rel="stylesheet" href="./assets/css/animations.css" />
   <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+  <!-- Contact Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact | MotoVest",
+    "url": "https://drivewithmotovest.com/contact.html",
+    "description": "Reach MotoVest for support, partnerships, and vehicle ownership enquiries."
+  }
+  </script>
+
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-23KBFJT4XQ"></script>
   <script>
@@ -47,7 +64,7 @@
 <header class="site-header">
   <nav class="navbar">
     <a href="index.html" class="logo" aria-label="MotoVest — home">
-      <img src="./assets/images/logos/motovest-logo.png" alt="MotoVest" class="logo-img" />
+      <img src="./assets/images/logos/motovest-logo.png" alt="MotoVest" class="logo-img" loading="lazy" decoding="async" />
     </a>
 
     <ul class="nav-links">
@@ -81,8 +98,7 @@
       <p>Reach out for driver applications, vehicle ownership plans, partnerships, support, or general enquiries.</p>
     </div>
     <div class="contact-hero-image">
-      <!-- TODO: Add your contact/team hero image here -->
-      <img src="./assets/images/contact/hero.jpg" alt="MotoVest support team" />
+      <img src="./assets/images/contact/hero.jpg" alt="MotoVest customer support team" loading="lazy" decoding="async" />
     </div>
   </section>
 
@@ -103,7 +119,7 @@
         </div>
         <div class="contact-card">
           <i data-lucide="map-pin"></i>
-          <div><h3>Office</h3><p>Lagos, Nigeria</p></div>
+          <div><h3>Office</h3><p>Lagos &amp; Abuja, Nigeria</p></div>
         </div>
         <div class="contact-card">
           <i data-lucide="message-circle"></i>
@@ -114,7 +130,7 @@
       <div class="contact-form-box">
         <h2>Send a Message</h2>
         <form class="contact-form" data-endpoint="https://api.web3forms.com/submit">
-      <input type="hidden" name="access_key" value="44827365-52a1-44bd-bd86-27f8a507e147" />
+          <input type="hidden" name="access_key" value="44827365-52a1-44bd-bd86-27f8a507e147" />
           <div class="form-group">
             <label for="fullName">Full Name</label>
             <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" autocomplete="name" required />
@@ -163,17 +179,18 @@
   </section>
 
   <section class="contact-cta">
-    <h2>Ready to drive and own with MotoVest?</h2>
-    <p>Start your application today and move closer to vehicle ownership.</p>
+    <h2>Ready to Start Your Ownership Journey?</h2>
+    <p>Apply today and take the first step toward owning your vehicle with MotoVest.</p>
     <a href="drivers.html" class="btn btn-primary">Apply Now</a>
   </section>
 </main>
+
 <footer class="site-footer" id="contact">
   <div class="footer-grid">
 
     <div class="footer-brand">
-      <a href="index.html" class="logo" aria-label="DriveMotoVest — home">
-        <img src="./assets/images/logos/motovest-logo.png" alt="DriveMotoVest" class="logo-img" />
+      <a href="index.html" class="logo" aria-label="MotoVest — home">
+        <img src="./assets/images/logos/motovest-logo.png" alt="MotoVest" class="logo-img" loading="lazy" decoding="async" />
       </a>
       <p>Empowering e-hailing drivers with flexible vehicle access and real ownership opportunities.</p>
 
@@ -213,27 +230,27 @@
       <h3>Contact</h3>
       <p><i data-lucide="phone"></i> <a href="tel:+2349035716787">09035716787</a></p>
       <p><i data-lucide="mail"></i> <a href="mailto:info@drivewithmotovest.com">info@drivewithmotovest.com</a></p>
-      <p><i data-lucide="map-pin"></i> Lagos, Nigeria</p>
+      <p><i data-lucide="map-pin"></i> Lagos &amp; Abuja, Nigeria</p>
     </div>
 
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; <span class="current-year"></span> DriveMotoVest. All rights reserved.</p>
+    <p>&copy; <span class="current-year"></span> MotoVest. All rights reserved.</p>
   </div>
 </footer>
+
 <!-- FLOATING WHATSAPP ACCESS -->
 <a href="https://wa.me/2349035716787" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-  <img src="./assets/images/icons/whatsapp-3.svg" alt="Chat on WhatsApp" />
+  <img src="./assets/images/icons/whatsapp-3.svg" alt="Chat on WhatsApp" loading="lazy" decoding="async" />
   <span>WhatsApp</span>
 </a>
 
-<!-- SCRIPTS EXECUTION ORDER -->
+<!-- SCRIPTS -->
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="./assets/js/main.js"></script>
 <script src="./assets/js/forms.js"></script>
 
-<!-- Safety net: render icons + set the year even if main.js doesn't -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     if (window.lucide && typeof lucide.createIcons === "function") { lucide.createIcons(); }

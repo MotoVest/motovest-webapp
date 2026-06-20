@@ -5,26 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
   <title>Frequently Asked Questions | MotoVest</title>
-  <meta name="description" content="Answers to common MotoVest questions — driver eligibility, available vehicles, weekly payments, the path to ownership, and how to get support." />
-  <meta name="theme-color" content="#0B2447" />
+  <meta name="description" content="Answers to common MotoVest questions — driver eligibility, down payments, weekly payments, vehicles, ownership, and support." />
+  <meta name="theme-color" content="#00B26B" />
+
+  <!-- SEO Improvements -->
+  <link rel="canonical" href="https://drivewithmotovest.com/faq.html" />
+  <meta name="robots" content="index, follow">
 
   <link rel="icon" href="./assets/images/logos/favicon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logos/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logos/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logos/apple-touch-icon.png" />
 
+  <!-- Open Graph and Twitter tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://motovest.ng/faq.html" />
+  <meta property="og:url" content="https://drivewithmotovest.com/faq.html" />
   <meta property="og:title" content="Frequently Asked Questions | MotoVest" />
-  <meta property="og:description" content="Answers about eligibility, vehicles, payments, ownership and support at MotoVest." />
-  <meta property="og:image" content="https://motovest.ng/assets/images/logos/og-banner.png" />
+  <meta property="og:description" content="Answers to common MotoVest questions — driver eligibility, down payments, weekly payments, vehicles, ownership, and support." />
+  <meta property="og:image" content="https://drivewithmotovest.com/assets/images/logos/og-banner.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Frequently Asked Questions | MotoVest" />
-  <meta name="twitter:description" content="Answers about eligibility, vehicles, payments, ownership and support at MotoVest." />
-  <meta name="twitter:image" content="https://motovest.ng/assets/images/logos/og-banner.png" />
+  <meta name="twitter:description" content="Answers to common MotoVest questions — driver eligibility, down payments, weekly payments, vehicles, ownership, and support." />
+  <meta name="twitter:image" content="https://drivewithmotovest.com/assets/images/logos/og-banner.png" />
 
   <link rel="stylesheet" href="./assets/css/variables.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -34,6 +39,49 @@
   <link rel="stylesheet" href="./assets/css/faq.css" />
   <link rel="stylesheet" href="./assets/css/animations.css" />
   <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is a down payment required?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Drivers are required to make an initial down payment of 40%–50% of the vehicle value before starting their ownership plan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do weekly payments work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "After making a 40%–50% down payment, drivers continue with weekly payments based on their city — ₦100,000 per week in Abuja and ₦150,000 per week in Lagos. Every payment brings them closer to full ownership."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will I eventually own the car?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. After your initial 40%–50% down payment and successful completion of your weekly payment plan, ownership of the vehicle is transferred to you."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What vehicles are available?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MotoVest currently offers the Ford Focus (2015, 2017 and 2018) and the Toyota Corolla 2015, with more vehicles to follow."
+        }
+      }
+    ]
+  }
+  </script>
+
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-23KBFJT4XQ"></script>
   <script>
@@ -47,7 +95,7 @@
 <header class="site-header">
   <nav class="navbar">
     <a href="index.html" class="logo" aria-label="MotoVest — home">
-      <img src="./assets/images/logos/motovest-logo.png" alt="MotoVest" class="logo-img" />
+      <img src="./assets/images/logos/motovest-logo.png" alt="MotoVest" class="logo-img" loading="lazy" decoding="async" />
     </a>
 
     <ul class="nav-links">
@@ -78,11 +126,10 @@
     <div class="faq-hero-content">
       <span class="eyebrow">Frequently Asked Questions</span>
       <h1>Everything You Need To Know About MotoVest.</h1>
-      <p>Find answers about vehicle ownership, driver requirements, payments, eligibility, and the MotoVest application process.</p>
+      <p>Find answers about down payments, weekly payments, driver requirements, vehicle ownership, and the MotoVest application process.</p>
     </div>
     <div class="faq-hero-image">
-      <!-- TODO: Add a FAQ/help illustration or decorative image here -->
-      <img src="./assets/images/faq/hero.jpg" alt="FAQ and support illustration" />
+      <img src="./assets/images/faq/hero.jpg" alt="MotoVest customer support and frequently asked questions" loading="lazy" decoding="async" />
     </div>
   </section>
 
@@ -112,7 +159,12 @@
 
       <div class="faq-item" data-category="eligibility">
         <button class="faq-question"><span>Do I need previous e-hailing experience?</span><i data-lucide="plus"></i></button>
-        <div class="faq-answer"><p>Previous experience is beneficial but not always required. Each application is reviewed individually.</p></div>
+        <div class="faq-answer"><p>Previous e-hailing experience is an advantage, but it is not mandatory. Every application is reviewed individually.</p></div>
+      </div>
+
+      <div class="faq-item" data-category="payments">
+        <button class="faq-question"><span>Is a down payment required?</span><i data-lucide="plus"></i></button>
+        <div class="faq-answer"><p>Yes. Drivers are required to make an initial down payment of 40%–50% of the vehicle value before starting their ownership plan.</p></div>
       </div>
 
       <div class="faq-item" data-category="vehicles">
@@ -122,12 +174,17 @@
 
       <div class="faq-item" data-category="payments">
         <button class="faq-question"><span>How do weekly payments work?</span><i data-lucide="plus"></i></button>
-        <div class="faq-answer"><p>Drivers make scheduled weekly payments based on their city — ₦100,000 per week in Abuja and ₦150,000 per week in Lagos. Every payment goes directly towards owning the vehicle.</p></div>
+        <div class="faq-answer"><p>After making a 40%–50% down payment, drivers continue with weekly payments based on their city — ₦100,000 per week in Abuja and ₦150,000 per week in Lagos. Every payment brings them closer to full ownership.</p></div>
       </div>
 
       <div class="faq-item" data-category="ownership">
         <button class="faq-question"><span>Will I eventually own the car?</span><i data-lucide="plus"></i></button>
-        <div class="faq-answer"><p>Yes. Upon successful completion of your payment plan, ownership of the vehicle is transferred to you.</p></div>
+        <div class="faq-answer"><p>Yes. After your initial 40%–50% down payment and successful completion of your weekly payment plan, ownership of the vehicle is transferred to you.</p></div>
+      </div>
+
+      <div class="faq-item" data-category="ownership">
+        <button class="faq-question"><span>How long does ownership take?</span><i data-lucide="plus"></i></button>
+        <div class="faq-answer"><p>Most ownership plans are designed around 60 weeks, depending on the selected vehicle and payment agreement.</p></div>
       </div>
 
       <div class="faq-item" data-category="eligibility">
@@ -142,7 +199,7 @@
 
       <div class="faq-item" data-category="support">
         <button class="faq-question"><span>Is vehicle maintenance included?</span><i data-lucide="plus"></i></button>
-        <div class="faq-answer"><p>MotoVest provides support guidance and maintenance recommendations depending on the selected vehicle plan.</p></div>
+        <div class="faq-answer"><p>MotoVest provides guidance, maintenance support, and assistance throughout your ownership journey, depending on your selected vehicle plan.</p></div>
       </div>
 
       <div class="faq-item" data-category="eligibility">
@@ -160,19 +217,20 @@
 
   <section class="faq-contact">
     <h2>Didn't Find Your Answer?</h2>
-    <p>Our team is ready to help.</p>
+    <p>Still have questions? Our team is happy to help you start your vehicle ownership journey.</p>
     <div class="faq-contact-actions">
       <a href="contact.html" class="btn btn-primary">Contact Support</a>
       <a href="https://wa.me/2349035716787" class="btn btn-outline" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
     </div>
   </section>
 </main>
+
 <footer class="site-footer" id="contact">
   <div class="footer-grid">
 
     <div class="footer-brand">
-      <a href="index.html" class="logo" aria-label="DriveMotoVest — home">
-        <img src="./assets/images/logos/motovest-logo.png" alt="DriveMotoVest" class="logo-img" />
+      <a href="index.html" class="logo" aria-label="MotoVest — home">
+        <img src="./assets/images/logos/motovest-logo.png" alt="MotoVest" class="logo-img" loading="lazy" decoding="async" />
       </a>
       <p>Empowering e-hailing drivers with flexible vehicle access and real ownership opportunities.</p>
 
@@ -212,26 +270,26 @@
       <h3>Contact</h3>
       <p><i data-lucide="phone"></i> <a href="tel:+2349035716787">09035716787</a></p>
       <p><i data-lucide="mail"></i> <a href="mailto:info@drivewithmotovest.com">info@drivewithmotovest.com</a></p>
-      <p><i data-lucide="map-pin"></i> Lagos, Nigeria</p>
+      <p><i data-lucide="map-pin"></i> Lagos &amp; Abuja, Nigeria</p>
     </div>
 
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; <span class="current-year"></span> DriveMotoVest. All rights reserved.</p>
+    <p>&copy; <span class="current-year"></span> MotoVest. All rights reserved.</p>
   </div>
 </footer>
+
 <!-- FLOATING WHATSAPP ACCESS -->
 <a href="https://wa.me/2349035716787" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-  <img src="./assets/images/icons/whatsapp-3.svg" alt="Chat on WhatsApp" />
+  <img src="./assets/images/icons/whatsapp-3.svg" alt="Chat on WhatsApp" loading="lazy" decoding="async" />
   <span>WhatsApp</span>
 </a>
 
-<!-- SCRIPTS EXECUTION ORDER -->
+<!-- SCRIPTS -->
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="./assets/js/main.js"></script>
 
-<!-- Safety net: render icons + set the year even if main.js doesn't -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     if (window.lucide && typeof lucide.createIcons === "function") { lucide.createIcons(); }

@@ -5,26 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>About Us | MotoVest</title>
-  <meta name="description" content="MotoVest helps e-hailing drivers in Lagos and Abuja access vehicles through flexible hire purchase plans and build long-term wealth through ownership." />
-  <meta name="theme-color" content="#0B2447" />
+  <meta name="description" content="MotoVest helps e-hailing drivers in Lagos and Abuja access reliable vehicles with a 40%–50% down payment and flexible weekly payments designed to end in ownership." />
+  <meta name="theme-color" content="#00B26B" />
+
+  <!-- SEO Improvements -->
+  <link rel="canonical" href="https://drivewithmotovest.com/about.html" />
+  <meta name="robots" content="index, follow">
 
   <link rel="icon" href="./assets/images/logos/favicon.png" />
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/logos/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logos/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/logos/apple-touch-icon.png" />
 
+  <!-- Open Graph and Twitter tags -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://motovest.ng/about.html" />
+  <meta property="og:url" content="https://drivewithmotovest.com/about.html" />
   <meta property="og:title" content="About Us | MotoVest" />
   <meta property="og:description" content="Driving financial freedom through vehicle ownership. Learn how MotoVest helps drivers earn today and own tomorrow." />
-  <meta property="og:image" content="https://motovest.ng/assets/images/logos/og-banner.png" />
+  <meta property="og:image" content="https://drivewithmotovest.com/assets/images/logos/og-banner.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
 
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="About Us | MotoVest" />
   <meta name="twitter:description" content="Driving financial freedom through vehicle ownership. Learn how MotoVest helps drivers earn today and own tomorrow." />
-  <meta name="twitter:image" content="https://motovest.ng/assets/images/logos/og-banner.png" />
+  <meta name="twitter:image" content="https://drivewithmotovest.com/assets/images/logos/og-banner.png" />
 
   <link rel="stylesheet" href="./assets/css/variables.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
@@ -33,12 +38,39 @@
   <link rel="stylesheet" href="./assets/css/footer.css" />
   <link rel="stylesheet" href="./assets/css/animations.css" />
   <link rel="stylesheet" href="./assets/css/responsive.css" />
+
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "MotoVest",
+    "url": "https://drivewithmotovest.com",
+    "logo": "https://drivewithmotovest.com/assets/images/logos/motovest-logo.png",
+    "description": "Helping e-hailing drivers access reliable vehicles and build ownership through flexible payment plans.",
+    "sameAs": [
+      "https://linkedin.com/company/drivewithmotovest",
+      "https://instagram.com/drivewithmotovest",
+      "https://twitter.com/drivewithmotovest",
+      "https://tiktok.com/@drivewithmotovest"
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-23KBFJT4XQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-23KBFJT4XQ');
+  </script>
 </head>
 <body>
 <header class="site-header">
   <nav class="navbar">
     <a href="index.html" class="logo" aria-label="MotoVest — home">
-      <img src="./assets/images/logos/motovest-logo.png" alt="MotoVest" class="logo-img" />
+      <img src="./assets/images/logos/motovest-logo.png" alt="MotoVest" class="logo-img" loading="lazy" decoding="async" />
     </a>
 
     <ul class="nav-links">
@@ -68,22 +100,22 @@
   <div class="about-hero-content">
     <span class="eyebrow">About MotoVest</span>
     <h1>Driving Financial Freedom Through Vehicle Ownership.</h1>
-    <p>MotoVest helps hardworking drivers access vehicles through flexible hire purchase plans and build long-term wealth through ownership.</p>
+    <p>MotoVest helps hardworking drivers access reliable vehicles with a 40%–50% down payment and flexible weekly payments, creating a clear path to long-term ownership and financial freedom.</p>
   </div>
   <div class="about-hero-image">
-    <img src="./assets/images/drivers/driver-1.jpg" alt="MotoVest Driver">
+    <img src="./assets/images/drivers/driver-1.jpg" alt="MotoVest driver" loading="lazy" decoding="async" />
   </div>
 </section>
 
 <section class="our-story">
   <div class="story-image">
-    <img src="./assets/images/vehicles/ford-focus-1.jpg" alt="Ford Focus">
+    <img src="./assets/images/vehicles/ford-focus-1.jpg" alt="Ford Focus" loading="lazy" decoding="async" />
   </div>
   <div class="story-content">
     <h2>Our Story</h2>
     <p>Thousands of drivers work every day using vehicles they may never own. Many face high rental costs, hidden fees, and little opportunity to build long-term value.</p>
     <p>MotoVest was created to change that. We believe drivers deserve more than temporary access to vehicles. They deserve a pathway to ownership.</p>
-    <p>By combining technology, financing, and support services, MotoVest helps drivers earn today while building assets for tomorrow.</p>
+    <p>By combining technology, flexible financing, and support services, MotoVest helps drivers earn today while building something they can truly own tomorrow.</p>
   </div>
 </section>
 
@@ -98,7 +130,10 @@
   <div class="impact-grid">
     <div class="impact-card"><h3>2</h3><p>Cities live — Lagos &amp; Abuja</p></div>
     <div class="impact-card"><h3>3</h3><p>Platforms supported — Uber, Bolt &amp; inDrive</p></div>
-    <div class="impact-card"><h3>Weekly</h3><p>Flexible payment plans built around driver income</p></div>
+    <div class="impact-card">
+      <h3>40–50%</h3>
+      <p>Initial down payment followed by flexible weekly payments</p>
+    </div>
     <div class="impact-card"><h3>100%</h3><p>Of plans designed to end in vehicle ownership</p></div>
   </div>
 </section>
@@ -107,39 +142,36 @@
   <h2>Why MotoVest Exists</h2>
   <div class="benefits-grid">
     <div class="benefit-card"><i data-lucide="car"></i><h3>Ownership First</h3><p>Every plan is designed to help drivers become owners.</p></div>
-    <div class="benefit-card"><i data-lucide="wallet"></i><h3>Flexible Financing</h3><p>Weekly payments designed around driver income.</p></div>
+    <div class="benefit-card">
+      <i data-lucide="wallet"></i>
+      <h3>Flexible Financing</h3>
+      <p>Start with a 40%–50% down payment, then continue with weekly payments designed around driver income.</p>
+    </div>
     <div class="benefit-card"><i data-lucide="shield-check"></i><h3>Transparent Terms</h3><p>No hidden costs or unexpected fees.</p></div>
-  </div>
-</section>
-
-<section class="leadership">
-  <h2>Leadership Team</h2>
-  <div class="team-grid">
-    <div class="team-card"><img src="./assets/images/team/founder.jpg" alt="Founder"><h3>Alex Williams</h3><p>Founder &amp; CEO</p></div>
-    <div class="team-card"><img src="./assets/images/team/cofounder.jpg" alt="Co Founder"><h3>Leadership Member</h3><p>Operations</p></div>
   </div>
 </section>
 
 <section class="partners">
   <h2>Platforms Our Drivers Earn On</h2>
   <div class="partners-grid">
-    <div class="partner-logo"><img src="./assets/images/platforms/uber-15.svg" alt="Uber" /></div>
-    <div class="partner-logo"><img src="./assets/images/platforms/bolt-1.svg" alt="Bolt" /></div>
-    <div class="partner-logo"><img src="./assets/images/platforms/indrive-logo.svg" alt="inDrive" /></div>
+    <div class="partner-logo"><img src="./assets/images/platforms/uber-15.svg" alt="Uber" loading="lazy" decoding="async" /></div>
+    <div class="partner-logo"><img src="./assets/images/platforms/bolt-1.svg" alt="Bolt" loading="lazy" decoding="async" /></div>
+    <div class="partner-logo"><img src="./assets/images/platforms/indrive-logo.svg" alt="inDrive" loading="lazy" decoding="async" /></div>
   </div>
 </section>
 
 <section class="about-cta">
-  <h2>Build Your Future With MotoVest</h2>
-  <p>Start your vehicle ownership journey today.</p>
+  <h2>Drive Today. Own Tomorrow.</h2>
+  <p>Begin your ownership journey with a 40%–50% down payment and flexible weekly payments designed to help you succeed.</p>
   <a href="drivers.html" class="btn btn-primary">Apply Now</a>
 </section>
+
 <footer class="site-footer" id="contact">
   <div class="footer-grid">
 
     <div class="footer-brand">
-      <a href="index.html" class="logo" aria-label="DriveMotoVest — home">
-        <img src="./assets/images/logos/motovest-logo.png" alt="DriveMotoVest" class="logo-img" />
+      <a href="index.html" class="logo" aria-label="MotoVest — home">
+        <img src="./assets/images/logos/motovest-logo.png" alt="MotoVest" class="logo-img" loading="lazy" decoding="async" />
       </a>
       <p>Empowering e-hailing drivers with flexible vehicle access and real ownership opportunities.</p>
 
@@ -179,27 +211,24 @@
       <h3>Contact</h3>
       <p><i data-lucide="phone"></i> <a href="tel:+2349035716787">09035716787</a></p>
       <p><i data-lucide="mail"></i> <a href="mailto:info@drivewithmotovest.com">info@drivewithmotovest.com</a></p>
-      <p><i data-lucide="map-pin"></i> Lagos, Nigeria</p>
+      <p><i data-lucide="map-pin"></i> Lagos &amp; Abuja, Nigeria</p>
     </div>
 
   </div>
 
   <div class="footer-bottom">
-    <p>&copy; <span class="current-year"></span> DriveMotoVest. All rights reserved.</p>
+    <p>&copy; <span class="current-year"></span> MotoVest. All rights reserved.</p>
   </div>
 </footer>
 
-<!-- FLOATING WHATSAPP ACCESS -->
 <a href="https://wa.me/2349035716787" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
-  <img src="./assets/images/icons/whatsapp-3.svg" alt="Chat on WhatsApp" />
+  <img src="./assets/images/icons/whatsapp-3.svg" alt="Chat on WhatsApp" loading="lazy" decoding="async" />
   <span>WhatsApp</span>
 </a>
 
-<!-- SCRIPTS EXECUTION ORDER -->
 <script src="https://unpkg.com/lucide@latest"></script>
 <script src="./assets/js/main.js"></script>
 
-<!-- Safety net: render icons + set the year even if main.js doesn't -->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     if (window.lucide && typeof lucide.createIcons === "function") { lucide.createIcons(); }
